@@ -1,24 +1,24 @@
-document.getElementById("registerForm").addEventListener("submit", function (event) {
-    event.preventDefault(); // Evita que el formulario se envíe
+// Manejo del registro de usuario
+document.getElementById("registerForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const username = document.getElementById("username").value;
+    const email = document.getElementById("email").value;
 
-    // Obtener los valores de los campos
-    const username = document.getElementById("username").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const password = document.getElementById("password").value;
-    const confirmPassword = document.getElementById("confirmPassword").value;
+    alert(`Usuario registrado: ${username} (${email})`);
+    document.getElementById("registerForm").reset();
+});
 
-    const messageDiv = document.getElementById("message");
+// Manejo del inventario
+const inventoryList = document.querySelector("#inventoryList ul");
 
-    // Validaciones básicas
-    if (password !== confirmPassword) {
-        messageDiv.textContent = "Las contraseñas no coinciden.";
-        return;
-    }
+document.getElementById("inventoryForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const productName = document.getElementById("productName").value;
+    const quantity = document.getElementById("quantity").value;
 
-    // Simular registro
-    messageDiv.style.color = "green";
-    messageDiv.textContent = "¡Registro exitoso!";
+    const listItem = document.createElement("li");
+    listItem.textContent = `${productName} - Cantidad: ${quantity}`;
+    inventoryList.appendChild(listItem);
 
-    // Opcional: aquí podrías enviar los datos a un servidor usando fetch o AJAX
-    console.log({ username, email, password });
+    document.getElementById("inventoryForm").reset();
 });
