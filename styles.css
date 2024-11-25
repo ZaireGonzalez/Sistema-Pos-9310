@@ -1,6 +1,6 @@
-/* Establece el fondo verde claro */
+/* Estilo del fondo de la página */
 body {
-  background-color: #a8e6cf;
+  background-color: #a8e6cf;  /* Verde claro */
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -13,6 +13,7 @@ body {
 /* Contenedor principal */
 .container {
   text-align: center;
+  width: 100%;
 }
 
 /* Estilo del encabezado */
@@ -31,15 +32,16 @@ header h1 {
 /* Estilo de la cuadrícula de cuadros */
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);  /* Tres columnas */
   gap: 20px;
   justify-items: center;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* Estilo de cada cuadro */
 .box {
-  background-color: #d3d3d3;
+  background-color: #d3d3d3;  /* Gris claro */
   padding: 40px;
   width: 150px;
   height: 150px;
@@ -50,12 +52,13 @@ header h1 {
   font-size: 1.2rem;
   color: #333;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
 }
 
 /* Ajustes de diseño para pantallas pequeñas */
 @media screen and (max-width: 600px) {
   .grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;  /* Dos columnas en pantallas pequeñas */
   }
 
   .box {
