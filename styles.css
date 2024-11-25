@@ -1,79 +1,65 @@
+/* Establece el fondo verde claro */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  background-color: #a8e6cf;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
+/* Contenedor principal */
 .container {
-    background-color: white;
-    padding: 20px 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
+  text-align: center;
 }
 
-h1 {
-    margin-bottom: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-label {
-    text-align: left;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-button {
-    background-color: #6200ea;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #3700b3;
-}
-
-#message {
-    margin-top: 15px;
-    font-size: 14px;
-    color: red;
-}
-header {
-  background-color: #9df0a0;  /* Color de fondo */
-  padding: 100px;
-  text-align: center;  /* Centrar el texto */
-}
-
+/* Estilo del encabezado */
 header h1 {
-  color: white;  /* Color de texto */
-  font-size: 2.5rem;  /* Tamaño de fuente */
-  margin: 0;  /* Eliminar márgenes */
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 10px;
 }
-body {
-    background-color: #9df0a0; /* Elige un color en formato hexadecimal */
-  }
-  
 
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Estilo de la cuadrícula de cuadros */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+/* Estilo de cada cuadro */
+.box {
+  background-color: #d3d3d3;
+  padding: 40px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes de diseño para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .box {
+    width: 120px;
+    height: 120px;
+  }
+}
