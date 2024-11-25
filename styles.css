@@ -62,7 +62,7 @@ button:hover {
     color: red;
 }
 header {
-  background-color: #4CAF50;  /* Color de fondo */
+  background-color: #9df0a0;  /* Color de fondo */
   padding: 20px;
   text-align: center;  /* Centrar el texto */
 }
@@ -72,4 +72,8 @@ header h1 {
   font-size: 2.5rem;  /* Tamaño de fuente */
   margin: 0;  /* Eliminar márgenes */
 }
+body {
+    background-color: #9df0a0; /* Elige un color en formato hexadecimal */
+  }
+  
 
