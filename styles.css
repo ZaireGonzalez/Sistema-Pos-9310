@@ -61,3 +61,15 @@ button:hover {
     font-size: 14px;
     color: red;
 }
+header {
+  background-color: #4CAF50;  /* Color de fondo */
+  padding: 20px;
+  text-align: center;  /* Centrar el texto */
+}
+
+header h1 {
+  color: white;  /* Color de texto */
+  font-size: 2.5rem;  /* Tamaño de fuente */
+  margin: 0;  /* Eliminar márgenes */
+}
+
